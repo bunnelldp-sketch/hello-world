@@ -1,0 +1,47 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow will install Deno then run `deno lint` and `deno test`.
+# For more information see: https://github.com/denoland/setup-deno
+
+name: Hello
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v4
+      - name: helllllllo
+        run: git status
+      - name: hi
+        run: git clone https://github.com/phetsims/assert.git && git clone https://github.com/phetsims/axon.git && git clone https://github.com/phetsims/babel.git && git clone https://github.com/phetsims/brand.git && git clone https://github.com/phetsims/chipper.git && git clone https://github.com/phetsims/dot.git && git clone https://github.com/phetsims/joist.git && git clone https://github.com/phetsims/kite.git && git clone https://github.com/bunnelldp-sketch/natural-selection.git && git clone https://github.com/phetsims/perennial.git perennial-alias && git clone https://github.com/phetsims/phet-core.git && git clone https://github.com/phetsims/phetcommon.git && git clone https://github.com/phetsims/phetmarks.git && git clone https://github.com/phetsims/query-string-machine.git && git clone https://github.com/phetsims/scenery.git && git clone https://github.com/phetsims/scenery-phet.git && git clone https://github.com/phetsims/sherpa.git && git clone https://github.com/phetsims/sun.git && git clone https://github.com/phetsims/tambo.git && git clone https://github.com/phetsims/tandem.git && git clone https://github.com/phetsims/twixt.git && git clone https://github.com/phetsims/utterance-queue.git
+      - name: why
+        run: ls
+      - name: chipper
+        run: cd chipper && npm install
+      - name: perennial-alias
+        run: cd perennial-alias && npm install
+      - name: natural-selection
+        run: cd natural-selection && npm install
+      - name: thefirsthello
+        run: npm install grunt-cli --force
+      - name: start
+        run: grunt --brands=adapted-from-phet
+      - name: hello
+        run: cp natural-selection/build/adapted-from-phet/natural-selection_en_adapted-from-phet.html ./index.html
+      - name: hello2
+        run: ls && ls natural-selection/build/adapted-from-phet/
