@@ -34,15 +34,15 @@ jobs:
       - name: why
         run: ls
       - name: chipper
-        run: cd chipper & npm install
+        run: cd chipper && npm install
       - name: perennial-alias
-        run: cd perennial-alias & npm install
+        run: cd perennial-alias && npm install
       - name: natural-selection
-        run: cd natural-selection & npm install
+        run: cd natural-selection && npm install
       - name: thefirsthello
         run: npm install grunt-cli --force
       - name: start
-        run: cd natural-selection & grunt --brands=adapted-from-phet --force
+        run: cd natural-selection && grunt --brands=adapted-from-phet --force
       - name: hello
         run: cp natural-selection/build/adapted-from-phet/natural-selection_en_adapted-from-phet.html ./index.html
       - name: hello2
